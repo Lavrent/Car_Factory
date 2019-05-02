@@ -3,12 +3,12 @@ package com.aca.carFactory.wheels;
 public class AllWheelDrive extends Wheel {
 
     public AllWheelDrive() {
-        super( WheelType.ALL_WHEEL_DRIVE);
+        super( WheelType.All_wheel_drive);
     }
 
     @Override
     public WheelType getType() {
-        return WheelType.ALL_WHEEL_DRIVE;
+        return WheelType.All_wheel_drive;
     }
 
     @Override

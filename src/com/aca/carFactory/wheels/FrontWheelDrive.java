@@ -3,12 +3,12 @@ package com.aca.carFactory.wheels;
 public class FrontWheelDrive extends Wheel {
 
     public FrontWheelDrive() {
-        super( WheelType.FRONT_WHEEL_DRIVE);
+        super( WheelType.Front_wheel_drive);
     }
 
     @Override
     public WheelType getType() {
-        return WheelType.FRONT_WHEEL_DRIVE;
+        return WheelType.Front_wheel_drive;
     }
 
     @Override
