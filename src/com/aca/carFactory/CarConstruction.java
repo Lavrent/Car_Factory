@@ -4,7 +4,7 @@ import com.aca.carFactory.car.CarType;
 import java.util.Scanner;
 
 public class CarConstruction {
-    public static void createCar(){
+    public static void produceCar(){
         Scanner in = new Scanner(System.in);
         System.out.println("choose the car type");
         String car_type = in.nextLine();

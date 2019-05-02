@@ -7,6 +7,7 @@ import com.aca.carFactory.wheels.*;
 import java.util.Scanner;
 
 public class CarFactory {
+        static Scanner in = new Scanner(System.in);
 
     public static Car buildCar(CarType carType) {
         Car car = null;
@@ -30,13 +31,19 @@ public class CarFactory {
                 car = new Crossover();
                 break;
         }
-        Scanner in = new Scanner(System.in);
-        System.out.println("choose the engine  ");
-        String engine_type = in.nextLine();
-        System.out.println("choose the wheel");
-        String wheel_type = in.nextLine();
-        car.buildEngine(EngineType.valueOf(engine_type));
-        car.buildWheel(WheelType.valueOf(wheel_type));
+        buildEngine(car);
+        buildWheel(car);
         return car;
     }
+
+    public static void buildEngine(Car car){
+        System.out.println("choose the engine  ");
+        String engine_type = in.nextLine();
+        car.buildEngine(EngineType.valueOf(engine_type));
+    }
+      public static void buildWheel(Car car) {
+          System.out.println("choose the wheel");
+          String wheel_type = in.nextLine();
+          car.buildWheel(WheelType.valueOf(wheel_type));
+      }
 }
